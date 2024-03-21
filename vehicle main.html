@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VEHICLE</title>
+    <link rel="icon" type="image/png" href="ez icon 4.png" />
+    <link rel="stylesheet" href="vehicle main.css" />
+  </head>
+  <body>
+    <a href="index.html">
+	<img 
+	class="back"
+	src="image--1-removebgpreview-3@2x.png">
+	</a>
+    <h1><img src="ez bg 4.png" width="200" height="100" /></h1>
+    <div id="landing">
+      <div class="container">
+        <div class="options-list">
+          
+            <button class="btn" onclick="brand()">
+              <img
+                src="sedan.png"
+                alt="sedan icon"
+                width="80"
+                height="80" />SEDAN
+            </button>
+          
+          
+            <button class="btn" onclick="brand()">
+              <img
+                src="motorcycle.png"
+                alt="motor icon"
+                width="80"
+                height="80" />MOTORCYCLE
+            </button>
+          
+          
+            <button class="btn" onclick="brand()">
+              <img src="suv.png" alt="suv icon" width="80" height="50" />SUV
+            </button>
+          
+            <button class="btn" onclick="brand()">
+              <img src="van.png" alt="van icon" width="80" height="70" />VAN
+            </button>
+         
+          </a>
+        </div>
+      </div>
+    </div>
+	
+	<script>
+	
+	function brand(){
+	prompt("What is the brand of your vehicle?");
+	plate();
+	}
+	
+	function plate() {
+	prompt("What is the plate number of your vehicle?");
+	color();
+	}
+	
+	function color() {
+	prompt("What is the color of your vehicle?");
+	confirm();
+	}
+	
+	function confirm() {
+	alert("Details confirmed! Click OK to return to Client Page")
+	window.location="landing client.html";
+	}
+	
+	</script>
+  </body>
+</html>
